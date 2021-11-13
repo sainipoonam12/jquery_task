@@ -22,10 +22,20 @@ $(document).ready(function(){
         $(".mySubheading").append('<option value='+i+'>'+subheading+'</option>');        
     });    
     $(".myHeading").on('change',function(){
-        // var selectedheading = $(this).children("option:selected").val();
         index=$(this).val(); 
-        console.log(index);
+        
         $(".mySubheading").append('<option value='+index+'></option>');
+    });
+    // $(".myHeading").on('change',function(){
+    $(".ThirdForm").submit(function(r){
+        r.preventDefault();
+        var Selectedoption = $('.optn option:selected').text();
+        if(Selectedoption == "text")
+            
+                console.log("4")
+
+            
+
     });
 
 });
